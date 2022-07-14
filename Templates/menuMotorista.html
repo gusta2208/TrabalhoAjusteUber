@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid" style="background-color: rgb(252, 250, 250);">
+  <nav class="navbar navbar-light bg-light"  >
+    <span class="navbar-brand mb-0 h1" > Uber</span><br>
+  </nav><br><br>
+  <form role="form" action="menuMotorista.html" method="post">
+<div style="text-align: center;" style="color: rgb(0, 0, 0);"><h1> Menu Motorista </h1><br><br><br></div>
+  <div class="container-md">
+    <div style="text-align:center">
+      <div style="margin-top: 30px;" class="d-grid gap-4 justify-content-center">
+
+        <form action="./MenuMotorista.html" method="POST">
+        <a href="atualizar.html"> <button type="button" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#modalnome" class="btn btn-dark">Atualizar Dados</button></a><br>
+
+        <a href="consultarCodigo.html"> <button type="button" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#modalnome" class="btn btn-dark">Consultar Dados</button></a><br>
+    
+      
+        <button data-bs-toggle="modal" data-bs-target="#modalexcluir" class="btn btn-dark" onclick="myFunction1()" style="width: 300px;">Disponível</button><br>
+        <button data-bs-toggle="modal" data-bs-target="#modalexcluir" class="btn btn-dark" onclick="myFunction()" style="width: 300px;">Indisponível</button><br>
+        <a href="excluir.html"><button type="button"  style="width: 300px;" data-bs-toggle="modal" data-bs-target="#modalexcluir" class="btn btn-dark">Excluir Conta</button></a><br>
+        <a href="menu.html"><button type="button" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#modalexcluir" class="btn btn-dark"> Voltar </button></a><br>
+
+        
+        <script>
+          function myFunction1() {
+            alert("Motorista está Disponível");
+          }
+          </script>
+
+        <script>
+        function myFunction() {
+          alert("Motorista está Indisponível");
+        }
+        </script>
+      </div>
+    </div>
+  </div>
+
+
+ </form>
+</body>
+
+</html>

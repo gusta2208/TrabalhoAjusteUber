@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script>
+      function checkempty(form) {
+          if (form.tNovoCpf.value == "" ||
+              form.tNovoCpf.value == null ||
+              form.tNovoCpf.value == undefined ||
+              form.tNovoCpf.value.length == 0 || 
+              form.tNovoTelefone.value == "" ||
+              form.tNovoTelefone.value == null ||
+              form.tNovoTelefone.value == undefined ||
+              form.tNovoTelefone.value.length == 0 || 
+              form.tNovoEndereco.value == "" ||
+              form.tNovoEndereco.value == null ||
+              form.tNovoEndereco.value == undefined ||
+              form.tNovoEndereco.value.length == 0 || 
+              form.tNovaDataNascimento.value == "" ||
+              form.tNovaDataNascimento.value == null ||
+              form.tNovaDataNascimento.value == undefined ||
+              form.tNovaDataNascimento.value.length == 0 || 
+              form.tNovoSenha.value == "" ||
+              form.tNovoSenha.value == null || 
+              form.tNovoSenha.value == undefined ||
+              form.tNovoSenha.value == 0 
+              )   {
+            
+              alert("Digite valores válidos!\n");
+              return false;
+          } else {
+              alert("Cadastrado com sucesso!\n");
+              return true;
+          }
+      }
+    </script>
+</head>
+<body class="container-fluid" style="background-color: rgb(253, 250, 250);">
+  <nav class="navbar navbar-light bg-light"  >
+    <a class="navbar-brand" href="menu.html">Uber</a>
+    <a class="navbar-brand" href="loginCliente.html">Login</a>
+  </nav><br><br>
+  
+<div style="text-align: center;" style="color: rgb(0, 0, 0);"> <h1>Cadastro Cliente</h1><br><br></div>
+  <div class="container-md">
+    <div class="row">
+			<form onsubmit="return checkempty(cadastroLanche)"action="indexBoot.html" method="post">
+				<div class="row">
+					<div class="col-md-4 col-lg-4"></div>
+					<div class="col-md-4 col-lg-4">
+              <div class="form-group">
+                <label id="cpf" name="lCpf" style="color: aliceblue;" >CPF:</label>
+                <input type="text"  class="form-control" name="tNovoCpf" id="tCpf" placeholder="Informe seu CPF:" ><br>
+              </div>
+              <div class="form-group">
+                <label id="nome" name="lNome" style="color: aliceblue;">Nome:</label>
+                <input type="text"  class="form-control" name="tNovoNome" id="tNome" placeholder="Informe seu nome:"><br>
+              </div>
+              <div class="form-group">
+                <label id="telefone" name="lTelefone" style="color: aliceblue;">Telefone:</label>
+                <input type="text"  class="form-control" name="tNovoTelefone" id="tTelefone" placeholder="(11) 99999-9999"><br>
+              </div>
+              <div class="form-group">
+                <label id="endereco" name="lEndereco"style="color: aliceblue;">Endereço:</label>
+                <input type="text"  class="form-control" name="tNovoEndereco" id="tEndereco" placeholder="Informe seu endereço:"><br>
+              </div>
+              <div class="form-group">
+                <label id="dataNascimento" name="lDataNascimento"style="color: aliceblue;">DataNascimento</label>
+                <input type="date"  class="form-control" name="tNovaDataNascimento" id="tDataNascimento" placeholder="Data de Nascimento"><br>
+              </div>
+              <div class="form-group">
+                <label id="senha" name="lsenha" style="color: aliceblue;">Senha:</label >
+                <input type="password"  style="background: center;" class="form-control" name="tNovoSenha" id="tSenha" placeholder="Informe sua Senha:"><br><br>
+              </div>
+
+              <div style="text-align:center">
+                <p>{{resultado}}</p>
+                    <form action="" method="POST">
+                         <input type="submit" style="width: 300px;" class="btn btn-dark" value="Cadastrar"/><br><br>
+                    </form>
+                    <a href="motoristaCadastro.html" ><button type="button" style="width: 300px;" class="btn btn-dark"> Cadastro Motorista </button></a><br><br>
+
+              </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

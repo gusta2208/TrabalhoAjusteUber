@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light"  >
+    <a class="navbar-brand" href="menu.html">Uber</a>
+    <a class="navbar-brand" href="loginCliente.html">Login</a>
+  </nav><br><br>
+  <div class="row">
+    <div style="text-align: center;" style="color: rgb(0, 0, 0);"> <h1>Consultar Dados</h1><br><br></div>
+    <form role="form" action="consultarCodigo.html" method="post">
+      <div class="row">
+        <div class="col-md-4 col-lg-4"></div>
+        <div class="col-md-4 col-lg-4">
+            <div class="form-group">
+              <label name="lCpf" style="color: rgb(0, 0, 0);" >CPF:</label>
+              <input type="number"  class="form-control" name="tCpf" placeholder="Informe seu CPF:" ><br>
+            </div>
+            <div style="text-align:center">
+              <button type="submit " class="btn btn-dark" style="width: 300px;" > Consultar </button><br><br>
+              <a href="atualizar.html" ><button type="button" style="width: 300px;" class="btn btn-dark"> Atualizar Dados </button></a><br><br>
+      </div>
+
+  </div>
+</div>
+    </form>
+    <div style="text-align: center"><h6> {{ dados }}</h6></div>
+</body>
+</html>

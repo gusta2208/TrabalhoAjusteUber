@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid" style="background-color: rgb(253, 253, 253);">
+  <nav class="navbar navbar-light bg-light"  >
+    <a class="navbar-brand" href="menu.html">Uber</a>
+    <a class="navbar-brand" href="loginCliente.html">Login</a>
+  </nav><br><br>
+<div style="text-align: center;" style="color: rgb(0, 0, 0);"> <h1>Cadastro Motorista</h1><br><br></div>
+  <div class="container-md">
+    <div class="row">
+			<form role="form" action="motoristaCadastro.html" method="post">
+				<div class="row">
+					<div class="col-md-4 col-lg-4"></div>
+					<div class="col-md-4 col-lg-4">
+						<div class="form-group">
+              <label id="cpf" name="lCpf" style="color: rgb(20, 21, 22);" >CPF:</label>
+              <input type="text"  class="form-control" name="tNovoCpf" id="tCpf" placeholder="Informe seu CPF:" ><br>
+            </div>
+            <div class="form-group">
+              <label id="nome" name="lNome" style="color: rgb(14, 15, 15);">Nome:</label>
+              <input type="text"  class="form-control" name="tNovoNome" id="tNome" placeholder="Informe seu nome:"><br>
+            </div>
+            <div class="form-group">
+              <label id="telefone" name="lTelefone" style="color: rgb(22, 23, 24);">Telefone:</label>
+              <input type="text"  class="form-control" name="tNovoTelefone" id="tTelefone" placeholder="(11) 99999-9999"><br>
+            </div>
+            <div class="form-group">
+              <label id="endereco" name="lEndereco" style="color: #000;">Endereço:</label>
+              <input type="text"  class="form-control" name="tNovoEndereco" id="tEndereco" placeholder="Informe seu endereço:"><br>
+            </div>
+            <div class="form-group">
+              <label id="modelo" name="lModelo" style="color: rgb(26, 27, 27);">Modelo:</label>
+              <input type="text"  class="form-control" name="tNovoModelo" id="tModelo" placeholder="Informe o modelo do veiculo:"><br>
+            </div>
+            <div class="form-group">
+              <label id="placa" name="lPlaca" style="color: rgb(31, 32, 32);">Placa:</label>
+              <input type="text"   class="form-control" name="tNovaPlaca" id="tPlaca" placeholder="Informe a placa do veículo:"><br>
+            </div>
+            <div class="form-group">
+              <label id="dataNascimento" name="lDataNascimento" style="color: rgb(29, 30, 31);">DataNascimento</label>
+              <input type="date"  class="form-control" name="tNovaDataNascimento" id="tDataNascimento" placeholder="Data de Nascimento"><br>
+            </div>
+            <div class="form-group">
+              <label id="senha" name="lSenha" style="color: rgb(17, 17, 17);">Senha:</label >
+              <input type="password"  class="form-control" name="tNovoSenha" id="tSenha" placeholder="Informe sua Senha:"><br><br>
+            </div>
+            <div style="text-align:center">
+                    <form action="" method="POST">
+                         <input type="submit" style="width: 300px;" class="btn btn-dark" value="Cadastrar"/><br><br>
+                    </form>
+                    <a href="menu.html" ><button type="button" style="width: 300px;" class="btn btn-dark"> Voltar </button></a><br><br>
+
+              </div>
+					</div>
+					<div class="col-md-4 col-lg-4"></div>
+				</div>
+        </form>
+                </div>
+
+      </div>
+  </div>
+</body>
+</html>
